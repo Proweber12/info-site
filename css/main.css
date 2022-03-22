@@ -1,0 +1,117 @@
+.main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sidebar {
+  width: 100%;
+}
+
+.sidebar__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.sidebar__menu .sidebar__list {
+  width: 300px;
+  padding: 10px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main__text {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 15px;
+  color: black;
+  text-decoration: none;
+}
+
+.active-link {
+  background-color: #e4f2e1;
+  -webkit-box-shadow: inset 5px 0 0 #2bac0c;
+          box-shadow: inset 5px 0 0 #2bac0c;
+}
+
+.main__container-wrapper {
+  margin-left: 50px;
+}
+
+.news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main__post {
+  color: black;
+  text-decoration: none;
+  margin-top: 20px;
+  max-width: 49%;
+  min-width: 49%;
+}
+
+.main__title {
+  font-size: 30px;
+  font-family: "Roboto";
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.news-block__content {
+  max-width: 408px;
+}
+.news-block__content .news-block__img {
+  height: 190px;
+  overflow: hidden;
+}
+.news-block__content img {
+  width: 100%;
+  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.news-block__content .news-block__title {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  font-family: "Roboto";
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  margin-top: 15px;
+}
+.news-block__content .news-block__text {
+  font-family: "Roboto";
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  margin-top: 5px;
+  line-height: 17px;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.news-block__data {
+  color: #b8b8b8;
+  font-size: 15px;
+  font-family: "Roboto";
+}
