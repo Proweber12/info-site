@@ -6,14 +6,14 @@ header {
   width: 100%;
   height: 100px;
   z-index: 10;
+  background-color: white;
 }
 
 .header-container {
   height: 100%;
 }
 ._container {
-  max-width: 1440px;
-  width: 90%;
+  max-width: 1250px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -22,12 +22,12 @@ header {
   display: flex;
   align-items: center;
   img {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+
     margin-right: 20px;
   }
   .header__text {
-    max-width: 466px;
+    width: 400px;
     font-family: $fontFamily;
     font-weight: 700;
     font-size: 15px;
@@ -36,6 +36,8 @@ header {
 
 .header__content {
   display: flex;
+  height: 100%;
+  align-items: center;
 }
 
 .header__contact-inform {
@@ -47,4 +49,10 @@ header {
     margin: 0 5px;
     padding: auto;
   }
+}
+
+.header__wrapper {
+  height: 100px;
+  width: 100%;
+  margin-bottom: 50px;
 }
