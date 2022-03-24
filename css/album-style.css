@@ -1,0 +1,43 @@
+.album__container {
+  margin-left: 50px;
+}
+
+.album__title {
+  font-family: "Roboto";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 35px;
+}
+
+.album__number {
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #b8b8b8;
+  margin: 15px 0 25px 0;
+}
+
+.album__photos-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 40px;
+}
+
+.album__item {
+  width: 49%;
+}
+.album__item .album__photo {
+  max-width: 408px;
+  max-height: 200px;
+  overflow: hidden;
+}
+.album__item .album__photo img {
+  width: 100%;
+}
