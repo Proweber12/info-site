@@ -23,7 +23,7 @@
 }
 .inform-block__text-block p:first-child,
 .inform-block__text-block :nth-child(2) {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .main__slider-block {
