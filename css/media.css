@@ -1,0 +1,67 @@
+.media__title h1 {
+  font-family: "Roboto";
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.album .album__subtitle {
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+.album .album__date {
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #b8b8b8;
+}
+
+.media__container {
+  margin-left: 50px;
+}
+
+.media__album-container:first-child {
+  margin-bottom: 60px;
+}
+
+.media__title {
+  margin-bottom: 25px;
+}
+.media__album-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.media__album {
+  text-decoration: none;
+  color: black;
+  min-width: 49%;
+  max-width: 49%;
+  margin-bottom: 20px;
+}
+
+.album .album__img {
+  max-width: 408px;
+  max-height: 160px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.album .album__img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  top: -30px;
+}
+.album .album__subtitle {
+  margin-bottom: 10px;
+}
