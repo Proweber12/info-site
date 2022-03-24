@@ -1,0 +1,78 @@
+footer {
+  margin-top: 50px;
+  padding: 30px 0 40px 0;
+  width: 100%;
+  background-color: #ececec;
+  .footer__information-block {
+    display: flex;
+    align-items: center;
+    width: 45%;
+    img {
+      width: 100px;
+    }
+  }
+}
+
+.footer-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__text-content {
+  margin-left: 20px;
+}
+
+.footer__text-content {
+  font-family: "Roboto";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23px;
+}
+
+.footer-title {
+  margin-bottom: 10px;
+}
+
+.footer__inform-location {
+  display: flex;
+  img {
+    height: 24px;
+    margin-right: 20px;
+    min-width: 24px;
+    max-width: 24px;
+  }
+}
+
+.footer__location {
+  font-family: "Roboto";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.footer__contact-links {
+  display: flex;
+  margin-bottom: 30px;
+  a {
+    margin: 0 5px;
+  }
+}
+
+.footer__phone-number {
+  font-family: "Roboto";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  margin-bottom: 8px;
+}
+.footer__email {
+  font-family: "Roboto";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}

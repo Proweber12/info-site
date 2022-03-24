@@ -13,7 +13,7 @@ header {
   height: 100%;
 }
 ._container {
-  max-width: 1250px;
+  max-width: 1225px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -45,9 +45,12 @@ header {
   align-items: center;
   justify-content: flex-end;
   width: 100%;
-  a {
+  a:not(:last-child) {
     margin: 0 5px;
     padding: auto;
+  }
+  a:last-child {
+    margin-left: 5px;
   }
 }
 

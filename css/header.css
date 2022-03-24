@@ -11,7 +11,7 @@ header {
 }
 
 ._container {
-  max-width: 1250px;
+  max-width: 1225px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -57,9 +57,12 @@ header {
           justify-content: flex-end;
   width: 100%;
 }
-.header__contact-inform a {
+.header__contact-inform a:not(:last-child) {
   margin: 0 5px;
   padding: auto;
+}
+.header__contact-inform a:last-child {
+  margin-left: 5px;
 }
 
 .header__wrapper {
