@@ -1,0 +1,130 @@
+section {
+  width: 100%;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.form .form__title {
+  font-family: "Roboto";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 35px;
+  margin-bottom: 10px;
+}
+.form .form__description {
+  font-family: "Roboto";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 40px;
+}
+.form .form__field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  width: 40%;
+  color: black;
+  margin-bottom: 30px;
+}
+.form .form__field .form__input {
+  background-color: #f7f7f7;
+  border: 1px solid #b8b8b8;
+  border-radius: 3px;
+  width: 100%;
+  padding: 5px 10px;
+}
+.form .form__field .form__input:focus {
+  outline: none;
+}
+.form .form__field .form__label {
+  margin-bottom: 10px;
+}
+
+.form__checkbox-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.form__checkbox-field .form__checkbox {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: absolute;
+}
+.form__checkbox-field .form__checkbox:checked + .form__label::before {
+  background-color: #2bac0c;
+}
+.form__checkbox-field .form__checkbox:checked + .form__label::after {
+  opacity: 1;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+}
+.form__checkbox-field .form__label {
+  padding-left: 30px;
+}
+.form__checkbox-field .form__label::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #b8b8b8;
+  background-color: #f6f6f6;
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.form__checkbox-field .form__label::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 12px;
+  border-right: 3px solid white;
+  border-bottom: 3px solid white;
+  position: absolute;
+  -webkit-transform: rotate(45deg) translateX(5px) translateY(-3px);
+          transform: rotate(45deg) translateX(5px) translateY(-3px);
+  top: 0;
+  left: 0;
+  z-index: 2;
+  opacity: 0;
+}
+
+.form__submit {
+  margin-top: 30px;
+  background: #2bac0c;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40%;
+  padding: 10px 0;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+}
