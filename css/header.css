@@ -2,6 +2,7 @@ header {
   position: fixed;
   width: 100%;
   height: 100px;
+  top: 0;
   z-index: 10;
   background-color: white;
 }
@@ -21,8 +22,8 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 .logo-block img {
   width: 90px;
@@ -41,8 +42,8 @@ header {
   display: flex;
   height: 100%;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .header__contact-inform {
@@ -50,11 +51,11 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   width: 100%;
 }
 .header__contact-inform a:not(:last-child) {
