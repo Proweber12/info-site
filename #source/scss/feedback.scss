@@ -1,0 +1,110 @@
+section {
+  width: 100%;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+
+  .form__title {
+    font-family: "Roboto";
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35px;
+    margin-bottom: 10px;
+  }
+
+  .form__description {
+    font-family: "Roboto";
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 40px;
+  }
+
+  .form__field {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column-reverse;
+    width: 40%;
+    color: black;
+    margin-bottom: 30px;
+
+    .form__input {
+      background-color: #f7f7f7;
+      border: 1px solid #b8b8b8;
+      border-radius: 3px;
+      width: 100%;
+      padding: 5px 10px;
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .form__label {
+      margin-bottom: 10px;
+    }
+  }
+}
+.form__checkbox-field {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  .form__checkbox {
+    appearance: none;
+    position: absolute;
+  }
+
+  .form__checkbox:checked + .form__label::before {
+    background-color: #2bac0c;
+  }
+
+  .form__checkbox:checked + .form__label::after {
+    opacity: 1;
+    transition: opacity 0.4s ease;
+  }
+
+  .form__label {
+    padding-left: 30px;
+    &::before {
+      content: "";
+      display: block;
+      width: 20px;
+      height: 20px;
+      border: 1px solid #b8b8b8;
+      background-color: #f6f6f6;
+      border-radius: 2px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+    &::after {
+      content: "";
+      display: block;
+      width: 8px;
+      height: 12px;
+      border-right: 3px solid white;
+      border-bottom: 3px solid white;
+      position: absolute;
+      transform: rotate(45deg) translateX(5px) translateY(-3px);
+      top: 0;
+      left: 0;
+      z-index: 2;
+      opacity: 0;
+    }
+  }
+}
+
+.form__submit {
+  margin-top: 30px;
+  background: #2bac0c;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  padding: 10px 0;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+}
