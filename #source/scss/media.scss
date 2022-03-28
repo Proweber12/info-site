@@ -1,0 +1,72 @@
+%media-title {
+  font-family: "Roboto";
+  font-size: 30px;
+  font-weight: 700;
+}
+
+%media-subtitle {
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+%media-date {
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #b8b8b8;
+}
+
+.media__container {
+  margin-left: 50px;
+}
+
+.media__album-container:first-child {
+  margin-bottom: 60px;
+}
+
+.media__title {
+  h1 {
+    @extend %media-title;
+  }
+  margin-bottom: 25px;
+}
+
+.media__album-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.media__album {
+  text-decoration: none;
+  color: black;
+  min-width: 49%;
+  max-width: 49%;
+  margin-bottom: 20px;
+}
+
+.album {
+  .album__img {
+    max-width: 408px;
+    max-height: 160px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    img {
+      width: 100%;
+      object-fit: cover;
+      position: relative;
+      top: -30px;
+    }
+  }
+  .album__subtitle {
+    @extend %media-subtitle;
+    margin-bottom: 10px;
+  }
+
+  .album__date {
+    @extend %media-date;
+  }
+}

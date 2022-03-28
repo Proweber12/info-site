@@ -1,0 +1,101 @@
+.inform-block {
+  margin-left: 50px;
+}
+
+.inform-block__image-container {
+  max-width: 835px;
+  overflow: hidden;
+}
+.inform-block__image-container img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.inform-block__text-block {
+  margin-top: 20px;
+}
+.inform-block__text-block p {
+  font-family: "Roboto";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.inform-block__text-block p:first-child,
+.inform-block__text-block :nth-child(2) {
+  margin-bottom: 20px;
+}
+
+.main__slider-block {
+  margin-left: 50px;
+}
+
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+.slider .slider-wrapper {
+  max-width: 428px;
+  max-height: 241px;
+  overflow: hidden;
+}
+.slider .slider-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-transition: left 0.5s ease;
+  transition: left 0.5s ease;
+}
+.slider .slider-line img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.slider .slider-buttons button {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  border-radius: 5px;
+  z-index: 1;
+  position: absolute;
+}
+.slider .slider-buttons button::before {
+  content: "";
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  display: block;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+}
+.slider .prev-button::before {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  left: 16px;
+  bottom: 14px;
+}
+.slider .next-button::before {
+  -webkit-transform: rotate(315deg);
+          transform: rotate(315deg);
+  right: 16px;
+  bottom: 14px;
+}
+.slider .prev-button {
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+.slider .next-button {
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
