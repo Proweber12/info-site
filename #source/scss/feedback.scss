@@ -108,3 +108,12 @@ section {
   border: none;
   border-radius: 3px;
 }
+
+.form__textarea {
+  width: 100%;
+  border: 1px solid #b8b8b8;
+  background-color: #f6f6f6;
+  &:focus {
+    outline: none;
+  }
+}
