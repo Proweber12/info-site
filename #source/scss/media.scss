@@ -70,3 +70,21 @@
     @extend %media-date;
   }
 }
+
+@media screen and (max-width: 950px) {
+  .media__container {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .media__album {
+    max-width: 100%;
+  }
+
+  .album {
+    .album__img {
+      max-width: 100%;
+    }
+  }
+}

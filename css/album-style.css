@@ -149,3 +149,17 @@
 .slider-buttons .next-button:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
+
+@media screen and (max-width: 950px) {
+  .album__container {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 560px) {
+  .album__item {
+    width: 100%;
+  }
+  .album__item .album__photo {
+    max-width: 100%;
+  }
+}

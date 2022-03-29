@@ -137,3 +137,20 @@ section {
 .form__textarea:focus {
   outline: none;
 }
+
+@media screen and (max-width: 950px) {
+  .form {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media screen and (max-width: 560px) {
+  .form .form__field {
+    width: 100%;
+  }
+
+  .form__submit {
+    width: 45%;
+  }
+}

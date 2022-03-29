@@ -129,3 +129,18 @@
     }
   }
 }
+
+@media screen and (max-width: 950px) {
+  .album__container {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .album__item {
+    width: 100%;
+    .album__photo {
+      max-width: 100%;
+    }
+  }
+}
