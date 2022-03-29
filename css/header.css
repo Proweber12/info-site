@@ -34,7 +34,25 @@ header {
   font-weight: 700;
   font-size: 15px;
 }
+@media screen and (max-width: 950px) {
+  .logo-block .header__text {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .logo-block .header__text {
+    width: auto;
+  }
+  .logo-block .header__text span {
+    display: none;
+  }
+}
 
+@media screen and (max-width: 560px) {
+  .logo-block img {
+    margin-right: 10px;
+  }
+}
 .header__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -69,4 +87,34 @@ header {
   height: 100px;
   width: 100%;
   margin-bottom: 50px;
+}
+
+.burger-button {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 7px;
+  font-size: 50px;
+  font-weight: 300;
+}
+.burger-button::before {
+  content: "_";
+}
+.burger-button::after {
+  content: "_";
+}
+
+@media screen and (max-width: 950px) {
+  .header__contact-inform a {
+    display: none;
+  }
+
+  .burger-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: -40px;
+  }
 }
