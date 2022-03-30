@@ -1,0 +1,233 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/header.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/fonts.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/null.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/about_us.css' %}" />
+    <title>О нас</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container _container">
+        <div class="header__content">
+          <div class="header__logo-block logo-block">
+            <a href="{% url 'main' %}"><img src="{% static 'img/logo.svg' %}" alt="logo" /></a>
+
+            <span class="header__text">
+              Информационный сайт о Каневском районе<span>
+                для Администрации Каневского сельского поселения Каневского
+                района</span
+              >
+            </span>
+          </div>
+          <div class="header__contact-inform">
+            <a
+              href="https://vk.com/kanevskadm"
+              class="header-link"
+              target="_blank"
+            >
+              <img src="{% static 'img/vk-icon.svg' %}" />
+            </a>
+            <a
+              href="https://www.youtube.com/channel/UClzIxca7wyUrRcF7MD9s5jg"
+              class="header-link"
+              target="_blank"
+            >
+              <img src="{% static 'img/youtube-icon.svg' %}" /> </a
+            ><a
+              href="https://ok.ru/admkanevskaya"
+              class="header-link"
+              target="_blank"
+            >
+              <img src="{% static 'img/ok-icon.svg' %}" />
+            </a>
+            <div class="burger-button">_</div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="header__wrapper"></div>
+    <main class="main">
+      <div class="main-container _container">
+        <aside>
+          <div class="main__mobile-header">
+            <h2 class="main__mobile-title">Меню</h2>
+            <span class="close-icon"></span>
+          </div>
+          <nav class="main__sidebar sidebar">
+            <div class="sidebar__menu">
+              <a href="{% url 'main' %}" class="sidebar__list main__text"
+                >Главная</a
+              >
+              <a href="{% url 'about_us' %}" class="sidebar__list main__text active-link"
+                >О районе</a
+              >
+              <a
+                href="{% url 'media' %}"
+                class="sidebar__list main__text"
+                >Медиа</a
+              >
+              <a href="{% url 'feedback' %}" class="sidebar__list main__text"
+                >Обратная связь</a
+              >
+            </div>
+          </nav>
+        </aside>
+        <section class="main_section">
+          <div class="inform-block">
+            <div class="inform-block__image-container">
+              <img src="{% static 'img/about_us-head.jpg' %}" alt="photo" />
+            </div>
+            <div class="inform-block__text-block">
+              <p>
+                <b>Каневской район</b> основан в 1924 году. Граница Каневского
+                района установлена Указом Президиума Верховного Совета РСФСР от
+                22 августа 1953 года и решением Краснодарского крайисполкома от
+                27 марта 1964 года. Каневской район располагается в равнинной
+                части края, в 120 километрах северо-западнее города Краснодара.
+                Протяженность его территории с севера на юг составляет 50 км, с
+                запада на восток – 75 км. Площадь района - почти 2,5 тысячи кв.
+                км, это 3 % от общей площади Кубани. Район граничит с севера со
+                Щербиновским и Староминским районами, с востока – с
+                Ленинградским и Павловским районами, с юга – с Брюховецким
+                районом, с запада – с Приморско-Ахтарским и Ейским районами. С
+                востока на запад район пересекают 7 степных рек общей
+                протяженностью 213 км. Для Каневского района характерна мягкая
+                зима и жаркое лето. Климат умеренно-континентальный. Общая
+                численность жителей района – порядка 104 тысяч человек. Площадь
+                сельхозугодий в районе составляет свыше 180 тысяч гектаров.
+                Водный фонд – 35 тысяч га. Лесной фонд - 3,5 тысячи га. Русловых
+                водных ресурсов - 17 тысяч га. Богатой флорой и фауной
+                отличаются искусственный Челбасский лес площадью 1459 гектаров,
+                заложенный сотню лет назад ученым-лесоводом Степановым, а также
+                более 230 тысяч гектаров охотничьих угодий, из них 39 тысяч
+                гектаров - плавней. Основу транспортной сети составляет
+                Северо-Кавказская железнодорожная магистраль. От районного
+                центра – станицы Каневской – до Краснодара 120 километров,
+                столько же до портового города Ейск. Расстояние до города
+                Ростов-на-Дону – 160 км, до федеральной трассы Ростов – Баку –
+                80 км. Связь с районами и ближайшими регионами Российской
+                Федерации поддерживается автобусным сообщением. На территории
+                района более 300 км дорог с асфальтовым покрытием межрайонного и
+                районного значения, не считая поселковых. Через земли района
+                протянуты нефте- и газопроводы высокого давления. С 1956 года
+                впервые в истории нефтегазовой промышленности Кубани началась
+                добыча природного газа из месторождения на территории района.
+                Сетевой газ подведен к 90 процентам населенных пунктов.
+                Источником водоснабжения служат подземные воды, добываемые с
+                помощью артезианских скважин глубиной от 170 до 210 метров.
+                Свыше сотни скважин обеспечивают население и предприятия водой.
+                История района пишется делами его жителей. Многие начинаются со
+                слов «первый», «самый», «единственный».
+              </p>
+              <p>
+                Каневская - самая большая станица на Кубани. В Каневском районе
+                построены первая сельская картинная галерея, самая высокая в
+                крае металлическая радиотелевизионная мачта, первый в России
+                сельский широкоформатный кинотеатр, первый на Кубани завод
+                газовой аппаратуры, первый сельский Дворец бракосочетания,
+                первый в России сельский Дворец спорта с плавательным бассейном
+                и первый на юге России Ледовый дворец спорта, единственный в
+                крае бесплатный зоопарк с более чем сорокапятилетней историей. В
+                районе открыто первое на Кубани газоконденсатное месторождение.
+                Здесь успешно работает первая в России сельская телестудия.
+                Свято-Покровский храм станицы Каневской - единственный
+                сохранившийся с начала прошлого века на территории от Краснодара
+                до Ейска. К его вековому юбилею в 2012 году на собранные всем
+                миром средства установлен первый на Кубани памятник святым
+                равноапостольным просветителям Кириллу и Мефодию. Каневской
+                район – крупнейшая зона многоотраслевого сельскохозяйственного
+                производства Кубани с развитым перерабатывающим комплексом. В
+                2016 году по темпам роста основных экономических показателей по
+                крупным и средним организациям район занял 4 место среди 44
+                муниципальных образований Краснодарского края. По объему
+                отгруженных сельхозтоваров он на протяжении последних лет
+                стабильно в числе лидеров в крае. Сельскохозяйственная отрасль
+                является бюджетообразующей.
+              </p>
+            </div>
+          </div>
+          <div class="main__slider-block">
+            <div class="slider">
+              <div class="slider-wrapper">
+                <div class="slider-line">
+                  <img src="{% static 'img/about_us-slider--first.jpg' %}" alt="" />
+                  <img src="{% static 'img/about_us-slider--second.jpg' %}" alt="" />
+                  <img src="{% static 'img/about_us-slider--third.jpg' %}" alt="" />
+                  <img src="{% static 'img/about_us-slider--fourth.jpg' %}" alt="" />
+                  <img src="{% static 'img/about_us-slider--five.jpg' %}" alt="" />
+                  <img src="{% static 'img/about_us-slider--six.jpg' %}" alt="" />
+                </div>
+              </div>
+              <div class="slider-buttons">
+                <button class="prev-button"></button>
+                <button class="next-button"></button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-container _container">
+        <div class="footer-content">
+          <div class="footer__information-block">
+            <div class="footer-logo">
+              <img src="{% static 'img/logo.svg' %}" />
+            </div>
+            <div class="footer__text-content">
+              <div class="footer-title">
+                Информационный сайт о Каневском районе для Администрации
+                Каневского сельского поселения Каневского района
+              </div>
+              <div class="footer__inform-location">
+                <img src="{% static 'img/footer-location.svg' %}" alt="footer-logo" />
+                <p class="footer__location">
+                  353730, ул. Горького, 60, Каневская, Краснодарский край
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="footer__contact-block">
+            <div class="footer__contact-links">
+              <a
+                href="https://vk.com/kanevskadm"
+                class="footer-link"
+                target="_blank"
+              >
+                <img src="{% static 'img/vk-icon.svg' %}" />
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UClzIxca7wyUrRcF7MD9s5jg"
+                class="footer-link"
+                target="_blank"
+              >
+                <img src="{% static 'img/youtube-icon.svg' %}" /> </a
+              ><a
+                href="https://ok.ru/admkanevskaya"
+                class="footer-link"
+                target="_blank"
+              >
+                <img src="{% static 'img/ok-icon.svg' %}" />
+              </a>
+            </div>
+            <div class="footer__contact-inform">
+              <div class="footer__phone-number">+7(86164)7-03-07</div>
+              <div class="footer__email">kanevskaya@mo.krasnodar.ru</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'js/burger-menu.js' %}"></script>
+  </body>
+</html>
