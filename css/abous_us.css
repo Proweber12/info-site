@@ -99,3 +99,22 @@
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
 }
+
+@media screen and (max-width: 950px) {
+  .inform-block {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 630px) {
+  .slider-buttons {
+    display: none;
+  }
+
+  .main__slider-block {
+    margin: 0;
+  }
+
+  .inform-block {
+    margin: 0;
+  }
+}

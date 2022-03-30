@@ -46,3 +46,12 @@
 .title-path {
   margin-top: 10px;
 }
+
+@media screen and (max-width: 950px) {
+  .main__block {
+    margin: 0;
+    .main__content {
+      align-items: center;
+    }
+  }
+}

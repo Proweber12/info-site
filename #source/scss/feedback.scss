@@ -117,3 +117,21 @@ section {
     outline: none;
   }
 }
+
+@media screen and (max-width: 950px) {
+  .form {
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .form {
+    .form__field {
+      width: 100%;
+    }
+  }
+
+  .form__submit {
+    width: 45%;
+  }
+}
