@@ -162,4 +162,8 @@
   .album__item .album__photo {
     max-width: 100%;
   }
+
+  .slider-wrapper {
+    width: 55%;
+  }
 }
