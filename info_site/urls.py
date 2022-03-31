@@ -34,5 +34,4 @@ urlpatterns = [
     re_path(r'^posts/post_14/$', mainapp.post_14, name='post_14'),
     re_path(r'^posts/post_15/$', mainapp.post_15, name='post_15'),
     re_path(r'^posts/post_16/$', mainapp.post_16, name='post_16'),
-
 ]
