@@ -1,4 +1,8 @@
+from django.http import HttpResponseRedirect
 from django.shortcuts import render
+from django.urls import reverse
+
+from .forms import FeedbackForm
 
 
 def main(request):
@@ -14,7 +18,16 @@ def media(request):
 
 
 def feedback(request):
-    return render(request, 'mainapp/pages/feedback.html')
+    if request.method == "POST":
+        form = FeedbackForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return HttpResponseRedirect(reverse("feedback"))
+    else:
+        form = FeedbackForm()
+
+    content = {"form": form}
+    return render(request, "mainapp/pages/feedback.html", content)
 
 
 def first_album(request):

@@ -82,59 +82,37 @@
           </nav>
         </aside>
         <section class="main__container-wrapper">
-          <form class="form">
+          <form class="form" method="post">
+            {% csrf_token %}
             <h2 class="form__title">Задать вопрос</h2>
             <div class="form__description">
               Заполните все поля и нажмите кнопку "Отправить"
             </div>
             <div class="form__field">
-              <input name="name" type="text" class="form__input" id="name" />
+              {{ form.full_name }}
               <label for="name" class="form__label">Фамилия Имя Отчество</label>
             </div>
             <div class="form__field">
-              <input
-                type="text"
-                name="residence"
-                class="form__input"
-                id="residence"
-              />
-              <label for="residence" class="form__label"
-                >Место проживания (населенный пункт)</label
-              >
+              {{ form.location }}
+              <label for="residence" class="form__label">Место проживания (населенный пункт)</label>
             </div>
             <div class="form__field">
-              <input type="tel" name="phone" class="form__input" id="phone" />
+              {{ form.phone }}
               <label for="phone" class="form__label">Номер телефона</label>
             </div>
             <div class="form__field">
-              <input type="email" name="email" class="form__input" id="email" />
+              {{ form.email }}
               <label for="email" class="form__label">Электронная почта</label>
             </div>
             <div class="form__field">
-              <textarea
-                name="textarea"
-                id="textarea"
-                class="form__textarea"
-              ></textarea>
+              {{ form.question }}
               <label for="textarea" class="form__label">Введите вопрос</label>
             </div>
             <div class="form__checkbox-field">
-              <input
-                type="checkbox"
-                name="agree"
-                class="form__checkbox"
-                id="agree"
-              />
-              <label for="agree" class="form__label"
-                >Я даю согласие на обработку моих персональных данных</label
-              >
+              {{ form.agree_privacy }}
+              <label for="agree" class="form__label">Я даю согласие на обработку моих персональных данных</label>
             </div>
-            <input
-              type="submit"
-              name="submit"
-              class="form__submit"
-              value="Отправить"
-            />
+            <input type="submit" name="submit" class="form__submit" value="Отправить"/>
           </form>
         </section>
       </div>
@@ -190,6 +168,6 @@
         </div>
       </div>
     </footer>
-    <script src="../js/burger-menu.js"></script>
+    <script src="{% static 'js/burger-menu.js' %}"></script>
   </body>
 </html>
